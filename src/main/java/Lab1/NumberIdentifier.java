@@ -28,7 +28,6 @@ public class NumberIdentifier {
         }
         return flag;
     }
-
     public boolean isRomanNumber(String number) {
         // Сложная проверка, если бы не было ограничения в num <=10??? Нужно её усложнять, важен порядок символов???//
         /*boolean flag = true;
@@ -55,7 +54,6 @@ public class NumberIdentifier {
         return flag;
 
     }
-
     public boolean operation(String operation) {
         boolean flag = false;
         String[] Action = {"+", "-", "/", "*"};

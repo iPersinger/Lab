@@ -27,7 +27,5 @@ public class ArabicCalcs extends Calculations {
                 System.out.println(ac.multiplication(number1, number2));
             }
         }
-
     }
-
 }
