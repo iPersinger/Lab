@@ -11,12 +11,13 @@ public class CatchInitiative extends Behaviour {
 
     @Override
     public void action() {
-        ACLMessage receive = getAgent().blockingReceive(MessageTemplate.MatchConversationId("counted_x"));
-        String[] CallANDXD = receive.getContent().split(" ");
+        ACLMessage receive = getAgent().receive(MessageTemplate.MatchConversationId("counted_x"));
+
         if (receive != null) {
-            System.out.println("Зашли в CatchInitiative");
+            String[] CallANDXD = receive.getContent().split(" ");
+            /*System.out.println("Зашли в CatchInitiative");*/
             if (CallANDXD[0].equals("YOUAREINITNITIATOR")) {
-                System.out.println(getAgent().getLocalName() + " Зашли в  условие CatchInitiative ");
+                /*System.out.println(getAgent().getLocalName() + " Зашли в  условие CatchInitiative ");*/
                 try {
                     x = Double.parseDouble(CallANDXD[1]);
                     d = Double.parseDouble(CallANDXD[2]);

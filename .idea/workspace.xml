@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afc9ce8-2f71-4a6e-a437-911bc122a0a5" name="Changes" comment="Check for Ksu">
+    <list default="true" id="5afc9ce8-2f71-4a6e-a437-911bc122a0a5" name="Changes" comment="Check for Ksu2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/CalcMyFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/CalcMyFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/CatchInitiative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/CatchInitiative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/FunctionAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/FunctionAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/HelpAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/HelpAgent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/HelpBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/HelpBehavior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/InitiateDistributedCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/InitiateDistributedCalculation.java" afterDir="false" />
     </list>
@@ -159,13 +157,22 @@
       <option name="project" value="LOCAL" />
       <updated>1698773818480</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Check for Ksu2">
+      <option name="closed" value="true" />
+      <created>1698787800854</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698787800854</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete" />
     <MESSAGE value="Check for Ksu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check for Ksu" />
+    <MESSAGE value="Check for Ksu2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check for Ksu2" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

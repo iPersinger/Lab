@@ -12,12 +12,12 @@ public class CalcMyFunction extends Behaviour {
 
     @Override
     public void action() {
-        ACLMessage receive = getAgent().blockingReceive(MessageTemplate.MatchConversationId("counted_y"));
+        ACLMessage receive = getAgent().receive(MessageTemplate.MatchConversationId("counted_y"));
         if (receive != null) {
-            System.out.println("Зашли в CalcMyFunction");
+            /*System.out.println("Зашли в CalcMyFunction");*/
             String[] XAndD = receive.getContent().split(" ");
             if (XAndD.length == 2) {
-                System.out.println(getAgent().getLocalName() + " Зашли в условие CalcMyFunction");
+                /*System.out.println(getAgent().getLocalName() + " Зашли в условие CalcMyFunction");*/
 
 
                 double x = 0, d = 0, y1 = 0, y2 = 0, y3 = 0;
@@ -49,7 +49,7 @@ public class CalcMyFunction extends Behaviour {
                     y3 = f.func3(x3);
                 }
                 String Content = y1 + " " + y2 + " " + y3;
-                System.out.println(Content);
+                /*System.out.println(Content);*/
                 ACLMessage message = new ACLMessage(ACLMessage.INFORM);
                 message.setContent(Content);
                 message.addReceiver(new AID(receive.getSender().getLocalName(), false));

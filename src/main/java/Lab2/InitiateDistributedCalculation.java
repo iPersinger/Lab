@@ -27,8 +27,9 @@ public class InitiateDistributedCalculation extends Behaviour {
 
     @Override
     public void onStart() {
-        System.out.println("Зашли в старт иницианции");
+        /*System.out.println("Зашли в старт иницианции");*/
         ACLMessage message = new ACLMessage(ACLMessage.INFORM);
+        message.setConversationId("counted_y");
         String Content = x + " " + d;
         message.setContent(Content);
         for (String s : agents) {
@@ -40,9 +41,9 @@ public class InitiateDistributedCalculation extends Behaviour {
     @Override
     public void action() {
         ACLMessage receive = getAgent().receive();
-        System.out.println("Зашли в  иницианцию");
+        /*System.out.println("Зашли в  иницианцию");*/
         if (receive != null) {
-            System.out.println(" Зашли в InitiateDistributedCalculation");
+            /*System.out.println(" Зашли в InitiateDistributedCalculation");*/
             String[] YYY = receive.getContent().split(" ");
             if (YYY.length == 3) {
                 i++;
@@ -65,7 +66,7 @@ public class InitiateDistributedCalculation extends Behaviour {
     public int onEnd() {
         ACLMessage message = new ACLMessage(ACLMessage.INFORM);
 
-        if (d < 0.001) {
+        if (Math.abs(d) < 0.001) {
             System.out.println(" Поздравляю, это победа. Число х - " + x);
             System.out.println(" Число d - " + d);
 
@@ -78,13 +79,22 @@ public class InitiateDistributedCalculation extends Behaviour {
 
             String Content = "YOUAREINITNITIATOR" + " " + x + " " + d;
             message.setContent(Content);
+            message.setConversationId("counted_x");
             message.addReceiver(new AID(randomAgent, false));
             getAgent().send(message);
-        } else {
+        } else if (p3 > p2 && p3 > p1) {
             x = p3;
 
             String Content = "YOUAREINITNITIATOR" + " " + x + " " + d;
             message.setContent(Content);
+            message.setConversationId("counted_x");
+            message.addReceiver(new AID(randomAgent, false));
+            getAgent().send(message);
+        } else {
+            System.out.println("Аномалия");
+            String Content = "YOUAREINITNITIATOR" + " " + x + " " + d;
+            message.setContent(Content);
+            message.setConversationId("counted_x");
             message.addReceiver(new AID(randomAgent, false));
             getAgent().send(message);
         }
