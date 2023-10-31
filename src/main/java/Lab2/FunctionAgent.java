@@ -7,8 +7,8 @@ public class FunctionAgent extends Agent {
 
     @Override
     protected void setup() {
+        addBehaviour(new CatchInitiative());
         addBehaviour(new CalcMyFunction());
-        addBehaviour(new CatchInitiative(x, d));
 
 
         System.out.println(getLocalName() + " - I'm here!");

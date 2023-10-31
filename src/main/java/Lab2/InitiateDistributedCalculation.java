@@ -8,10 +8,14 @@ import jade.lang.acl.ACLMessage;
 import java.util.List;
 import java.util.Random;
 
-public class InitiateDistributedCalculation extends OneShotBehaviour {
+public class InitiateDistributedCalculation extends Behaviour {
     int i = 0;
     private double x, d;
     private String[] agents = {"FunctionAgent1", "FunctionAgent2", "FunctionAgent3"};
+    Random random = new Random();
+    int randomIndex = random.nextInt(agents.length);
+    String randomAgent = agents[randomIndex];
+    boolean endInitiate = false;
 
 
     private double p1 = 0, p2 = 0, p3 = 0;
@@ -23,18 +27,20 @@ public class InitiateDistributedCalculation extends OneShotBehaviour {
 
     @Override
     public void onStart() {
+        System.out.println("Зашли в старт иницианции");
         ACLMessage message = new ACLMessage(ACLMessage.INFORM);
         String Content = x + " " + d;
         message.setContent(Content);
-        message.addReceiver(new AID("FunctionAgent1", false));
-        message.addReceiver(new AID("FunctionAgent2", false));
-        message.addReceiver(new AID("FunctionAgent3", false));
+        for (String s : agents) {
+            message.addReceiver(new AID(s, false));
+        }
         getAgent().send(message);
     }
 
     @Override
     public void action() {
         ACLMessage receive = getAgent().receive();
+        System.out.println("Зашли в  иницианцию");
         if (receive != null) {
             System.out.println(" Зашли в InitiateDistributedCalculation");
             String[] YYY = receive.getContent().split(" ");
@@ -48,12 +54,15 @@ public class InitiateDistributedCalculation extends OneShotBehaviour {
                     e.printStackTrace();
                     System.err.println("Айяйяй!");
                 }
+                endInitiate = true;
             }
 
         }
-        Random random = new Random();
-        int randomIndex = random.nextInt(agents.length);
-        String randomAgent = agents[randomIndex];
+
+    }
+
+    @Override
+    public int onEnd() {
         ACLMessage message = new ACLMessage(ACLMessage.INFORM);
 
         if (d < 0.001) {
@@ -67,19 +76,24 @@ public class InitiateDistributedCalculation extends OneShotBehaviour {
         } else if (p1 > p2 && p1 > p3) {
             x = p1;
 
-            String Content = x + " " + d;
+            String Content = "YOUAREINITNITIATOR" + " " + x + " " + d;
             message.setContent(Content);
             message.addReceiver(new AID(randomAgent, false));
             getAgent().send(message);
         } else {
             x = p3;
 
-            String Content = x + " " + d;
+            String Content = "YOUAREINITNITIATOR" + " " + x + " " + d;
             message.setContent(Content);
             message.addReceiver(new AID(randomAgent, false));
             getAgent().send(message);
         }
+        return super.onEnd();
+    }
 
 
+    @Override
+    public boolean done() {
+        return endInitiate;
     }
 }
