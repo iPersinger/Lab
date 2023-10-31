@@ -14,7 +14,7 @@ public class CalcMyFunction extends Behaviour {
     public void action() {
         ACLMessage receive = getAgent().receive(MessageTemplate.MatchConversationId("counted_y"));
         if (receive != null) {
-            /*System.out.println("Зашли в CalcMyFunction");*/
+            System.out.println(getAgent().getLocalName() + " Зашёл в CalcMyFunction от  " + receive.getSender().getLocalName());
             String[] XAndD = receive.getContent().split(" ");
             if (XAndD.length == 2) {
                 /*System.out.println(getAgent().getLocalName() + " Зашли в условие CalcMyFunction");*/
@@ -51,6 +51,7 @@ public class CalcMyFunction extends Behaviour {
                 String Content = y1 + " " + y2 + " " + y3;
                 /*System.out.println(Content);*/
                 ACLMessage message = new ACLMessage(ACLMessage.INFORM);
+                message.setConversationId("counted_i");
                 message.setContent(Content);
                 message.addReceiver(new AID(receive.getSender().getLocalName(), false));
                 getAgent().send(message);

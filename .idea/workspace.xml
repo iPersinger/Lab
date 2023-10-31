@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afc9ce8-2f71-4a6e-a437-911bc122a0a5" name="Changes" comment="Check for Ksu2">
+    <list default="true" id="5afc9ce8-2f71-4a6e-a437-911bc122a0a5" name="Changes" comment="Check for Ksu3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/CalcMyFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/CalcMyFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/CatchInitiative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/CatchInitiative.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/HelpBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/HelpBehavior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/InitiateDistributedCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/InitiateDistributedCalculation.java" afterDir="false" />
     </list>
@@ -19,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -41,9 +41,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/MATTHEW/Desktop/Learning-annotation/Learning-annotation"
+    "last_opened_file_path": "C:/Users/MATTHEW/IdeaProjects/Lab/src/main/java/Lab2new"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MATTHEW\IdeaProjects\Lab\src\main\java\Lab2new" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Lab2new" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Lab_2">
     <configuration name="Lab2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab2.Main" />
@@ -165,14 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698787800854</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Check for Ksu3">
+      <option name="closed" value="true" />
+      <created>1698789762066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698789762066</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete" />
     <MESSAGE value="Check for Ksu" />
     <MESSAGE value="Check for Ksu2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check for Ksu2" />
+    <MESSAGE value="Check for Ksu3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check for Ksu3" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
