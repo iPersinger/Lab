@@ -3,7 +3,6 @@ package Lab1;
 public class Exchanger {
     public String exchangerToArabic(String number) {
         switch (number) {
-            case "O" -> number = "0";
             case "I" -> number = "1";
             case "II" -> number = "2";
             case "III" -> number = "3";

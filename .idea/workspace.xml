@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afc9ce8-2f71-4a6e-a437-911bc122a0a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lab1/ArabicCalcs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lab1/Calculations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lab1/Exchanger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lab1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lab1/NumberIdentifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lab1/RomanCalcs.java" afterDir="false" />
+    <list default="true" id="5afc9ce8-2f71-4a6e-a437-911bc122a0a5" name="Changes" comment="Complete">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab1/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab2/CalcMyFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab2/CatchInitiative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab2/FunctionAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab2/HelpAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab2/HelpBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab2/InitiateDistributedCalculation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab2/MathFunc/MathFunc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab1/Calculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab1/Calculations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab1/Exchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab1/Exchanger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +50,57 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MATTHEW/Desktop/KM2/KM2&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Lab_2">
+    <configuration name="Lab2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab2.Main" />
+      <module name="Lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab_2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+      <module name="Lab" />
+      <option name="PROGRAM_PARAMETERS" value="-gui -agents FunctionAgent1:Lab2.FunctionAgent;FunctionAgent2:Lab2.FunctionAgent;FunctionAgent3:Lab2.FunctionAgent;HelpAgent1:Lab2.HelpAgent;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab1.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="Lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab1.Main" />
+      <module name="Lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab1.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab1.Main2" />
       <module name="Lab" />
       <extension name="coverage">
         <pattern>
@@ -64,9 +112,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Lab2.Main" />
+      <item itemvalue="Application.Lab_2" />
+      <item itemvalue="Application.Main2" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lab2.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>
   </component>
@@ -79,6 +135,36 @@
       <option name="presentableId" value="Default" />
       <updated>1694971528648</updated>
     </task>
+    <task id="LOCAL-00001" summary="Complete">
+      <option name="closed" value="true" />
+      <created>1694993382644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694993382644</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Complete">
+      <option name="closed" value="true" />
+      <created>1694993433474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694993433474</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Complete">
+      <option name="closed" value="true" />
+      <created>1694993545613</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694993545613</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
