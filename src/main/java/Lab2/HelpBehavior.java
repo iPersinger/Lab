@@ -18,7 +18,7 @@ public class HelpBehavior extends OneShotBehaviour {
         System.out.println(getAgent().getLocalName() + " Отправка пошла ");
         ACLMessage message = new ACLMessage(ACLMessage.INFORM);
         message.setConversationId("counted_x");
-        double x = -100, d = 1;
+        double x = 24, d = 3;
         String Content = "YOUAREINITNITIATOR" + " " + x + " " + d;
         message.setContent(Content);
         message.addReceiver(new AID(randomAgent, false));

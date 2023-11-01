@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afc9ce8-2f71-4a6e-a437-911bc122a0a5" name="Changes" comment="Check for Ksu3">
+    <list default="true" id="5afc9ce8-2f71-4a6e-a437-911bc122a0a5" name="Changes" comment="Check for Ksu4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/CalcMyFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/CalcMyFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/HelpBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/HelpBehavior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/InitiateDistributedCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/InitiateDistributedCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab2/MathFunc/MathFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab2/MathFunc/MathFunc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698789762066</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Check for Ksu4">
+      <option name="closed" value="true" />
+      <created>1698795071373</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698795071373</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,7 +197,8 @@
     <MESSAGE value="Check for Ksu" />
     <MESSAGE value="Check for Ksu2" />
     <MESSAGE value="Check for Ksu3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check for Ksu3" />
+    <MESSAGE value="Check for Ksu4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check for Ksu4" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

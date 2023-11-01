@@ -91,7 +91,7 @@ public class InitiateDistributedCalculation extends Behaviour {
 
         ACLMessage message = new ACLMessage(ACLMessage.INFORM);
         System.out.println(getAgent().getLocalName() + " Получил значения и провожу сравнение x -  " + x + " d - " + d);
-        if (Math.abs(d) < 0.001) {
+        if (Math.abs(d) < 0.00001) {
             System.out.println(" Поздравляю, это победа. Число х - " + x);
             System.out.println(" Число d - " + d);
 
